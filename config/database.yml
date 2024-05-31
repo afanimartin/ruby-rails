@@ -15,8 +15,9 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
-  database: <%= ENV["PGDATABASE"] %>
-  username: <%= ENV["PGUSER"] %>
-  password: <%= ENV["PGPASSWORD"] %>
-  host: <%= ENV["PGHOST"] %>
+  url: postgresql://postgres:mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd@viaduct.proxy.rlwy.net:12609/railway
+  database: railway
+  username: postgres
+  password: mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd
+  host: viaduct.proxy.rlwy.net
+  port: 12609
