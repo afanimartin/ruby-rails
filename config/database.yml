@@ -5,13 +5,19 @@ default: &default
 
 development:
   <<: *default
-  database: ruby_rails_database_development
+  url: postgresql://postgres:mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd@viaduct.proxy.rlwy.net:12609/railway
+  database: railway
   username: postgres
+  password: mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd
+  host: viaduct.proxy.rlwy.net
 
 test:
   <<: *default
-  database: ruby_rails_database_test
+  url: postgresql://postgres:mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd@viaduct.proxy.rlwy.net:12609/railway
+  database: railway
   username: postgres
+  password: mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd
+  host: viaduct.proxy.rlwy.net
 
 production:
   <<: *default
@@ -20,4 +26,3 @@ production:
   username: postgres
   password: mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd
   host: viaduct.proxy.rlwy.net
-  port: 12609
