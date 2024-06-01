@@ -91,5 +91,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.hosts << "rails-production-21c5.up.railway.app"
+  config.hosts << "web-production-3cfa.up.railway.app"
 end
