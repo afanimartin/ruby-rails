@@ -4,25 +4,17 @@ default: &default
   pool: 500
 
 development:
-  <<: *default
-  url: postgresql://postgres:mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd@viaduct.proxy.rlwy.net:12609/railway
-  database: railway
-  username: postgres
-  password: mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd
-  host: viaduct.proxy.rlwy.net
+  adapter: sqlite
+  database: db/ruby_rails_dev
 
 test:
-  <<: *default
-  url: postgresql://postgres:mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd@viaduct.proxy.rlwy.net:12609/railway
-  database: railway
-  username: postgres
-  password: mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd
-  host: viaduct.proxy.rlwy.net
+  adapter: sqlite
+  database: db/ruby_rails_test
 
 production:
   <<: *default
-  url: postgresql://postgres:mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd@viaduct.proxy.rlwy.net:12609/railway
+  url: postgresql://postgres:ogyYgHWnpIdVzwCagVQHafVjcSBlyxkf@viaduct.proxy.rlwy.net:38599/railway
   database: railway
   username: postgres
-  password: mPTQueYcuCTcOgdcKVzAbELUNwYZdpDd
+  password: ogyYgHWnpIdVzwCagVQHafVjcSBlyxkf
   host: viaduct.proxy.rlwy.net
