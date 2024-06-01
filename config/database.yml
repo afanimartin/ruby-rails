@@ -2,11 +2,11 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 500
-  url: postgresql://postgres:ogyYgHWnpIdVzwCagVQHafVjcSBlyxkf@viaduct.proxy.rlwy.net:38599/railway
+  url: postgresql://postgres:yJtNcatyVHQmdHWkYMIoqNDkaVSMnIGz@monorail.proxy.rlwy.net:27324/railway
   database: railway
   username: postgres
-  password: ogyYgHWnpIdVzwCagVQHafVjcSBlyxkf
-  host: viaduct.proxy.rlwy.net
+  password: yJtNcatyVHQmdHWkYMIoqNDkaVSMnIGz
+  host: monorail.proxy.rlwy.net
 
 development:
   <<: *default
@@ -16,4 +16,3 @@ test:
 
 production:
   <<: *default
-  
