@@ -2,19 +2,18 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 500
-
-development:
-  adapter: sqlite
-  database: db/ruby_rails_dev
-
-test:
-  adapter: sqlite
-  database: db/ruby_rails_test
-
-production:
-  <<: *default
   url: postgresql://postgres:ogyYgHWnpIdVzwCagVQHafVjcSBlyxkf@viaduct.proxy.rlwy.net:38599/railway
   database: railway
   username: postgres
   password: ogyYgHWnpIdVzwCagVQHafVjcSBlyxkf
   host: viaduct.proxy.rlwy.net
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  
