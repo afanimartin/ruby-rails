@@ -2,17 +2,21 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 500
+
+development:
+  <<: *default
+  database: legit_research_development
+  username: postgres
+
+test:
+  <<: *default
+  database: legit_research_test
+  username: postgres
+
+production:
+  <<: *default
   url: postgresql://postgres:yJtNcatyVHQmdHWkYMIoqNDkaVSMnIGz@monorail.proxy.rlwy.net:27324/railway
   database: railway
   username: postgres
   password: yJtNcatyVHQmdHWkYMIoqNDkaVSMnIGz
   host: monorail.proxy.rlwy.net
-
-development:
-  <<: *default
-
-test:
-  <<: *default
-
-production:
-  <<: *default
