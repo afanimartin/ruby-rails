@@ -9,7 +9,7 @@ gem "sprockets-rails"
 
 gem "litestack"
 
-gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 2.0.2"
 
 gem "puma", "~> 5.0"
 
